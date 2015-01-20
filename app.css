@@ -1,0 +1,27 @@
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: fontawesome;
+}
+article {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+header {
+  width: 70%;
+  margin: 0 auto;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
+  background: black;
+  color: white;
+}
+
+.track:not(:first-child) {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
