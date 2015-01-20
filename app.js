@@ -14,7 +14,8 @@
     var title = songs[id].title;
     var song = songs[id].file;
     var audioFile = 'Audio/' + song + '.mp3';
-    $('#music').empty().append('<audio src=' + audioFile + '></audio>');
+    $("audio").attr('src', "");
+    $("audio").attr('src', audioFile);
     $('#playerHeader').empty().append('<h2>Now Playing: ' + title + '</h2>');
     $('i').not($(this)).removeClass('fa-stop');
     $('i').not($(this)).addClass('fa-play');
