@@ -2,7 +2,7 @@
     var $songTemplate = $('#songTemplate').html();
     var newHTML = Mustache.to_html($songTemplate, data);
     $('#player').html(newHTML);
-    datas = function(){
+    tracks = function(){
       return data.tracks;
     };
   });
@@ -10,7 +10,7 @@
     $(this).removeClass('fa-play');
     $(this).addClass('fa-stop');
     var id = $(this).attr('id') -1 ;
-    var songs = datas()
+    var songs = tracks()
     var title = songs[id].title;
     var song = songs[id].file;
     var audioFile = 'Audio/' + song + '.mp3';
